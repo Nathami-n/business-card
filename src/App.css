@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.container {
+    position: relative;
+    border: 2px solid black;
+    max-width: 566px;
+    height: 740px;
+    padding: 32px 0 49px 53px;
+    border-radius: 67px;
+    background-color: #190f3b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card--logo {
+    border-radius: 50%;
+    width: 257px;
+    height: 257px;
+    margin-left: 88px;
+    transition: ease-in-out;
+    animation: rotate 4s linear infinite;
+    box-shadow: 0 0 51px #8572c4;
+}
+   
+@keyframes rotate {
+   
+   to {
+        box-shadow: 0 0 50px #d15656;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about--h {
+    margin-left: 150px;
+    color: #ffe;
+    margin-top: 23px;
+    font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about--p {
+    color: #fff;
+    font-weight: 560;
+    margin-top: 35px;
+    margin-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.skills-h {
+    margin-left: 150px;
+    color: #ffe;
+    font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill--p {
+    color: white;
+    font-weight: 560;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.footer--icons {
+    display: flex;
+    width: 100%;
+
+}
+
+.footer--icons > li {
+    list-style: none;
+    margin-right: 89px;
+    font-size: 2em;
+    transition: 1.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.footer--icons > li:hover {
+    box-shadow: 0 0 38px #493494;
+
+}
+.card--footer {
+    
+    padding-left: 89px;
+    margin-top: 70px;
+    margin-right: 39px;
 }
